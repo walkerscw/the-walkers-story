@@ -3,139 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Three wedding website concepts for Wilda and Sean Walker.">
-  <title>Wilda & Sean Walker — Wedding Website Concepts</title>
+  <meta name="description" content="The Walkers’ Story — celebrate the wedding of Wilda and Sean on March 21, 2027.">
+  <title>The Walkers’ Story — Wilda &amp; Sean</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="emerald">
-  <aside class="concept-picker" aria-label="Choose a wedding website concept">
-    <span class="picker-label">View concept</span>
-    <div class="picker-buttons" role="group" aria-label="Color concept">
-      <button type="button" data-set-theme="noir"><i class="swatch noir"></i><span>Black & White</span></button>
-      <button type="button" data-set-theme="emerald" class="active"><i class="swatch emerald"></i><span>Gold & Green</span></button>
-      <button type="button" data-set-theme="sage"><i class="swatch sage"></i><span>Sage & Champagne</span></button>
-    </div>
-  </aside>
-
+<body>
   <header class="hero" id="home">
     <nav class="top-nav" aria-label="Main navigation">
-      <a class="monogram" href="#home" aria-label="Wilda and Sean Walker home">W <b>&</b> S</a>
-      <div class="nav-links">
-        <a href="#story">Our Story</a><a href="#details">Details</a><a href="#gallery">Photos</a><a href="#travel">Travel</a>
-      </div>
+      <a class="brand" href="#home"><img src="assets/ws-monogram-sage-champagne-transparent-v2.png" alt=""><span>The Walkers’ Story</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links"><a href="#story">Our Story</a><a href="#details">Details</a><a href="#attire">Attire</a><a href="#party">Wedding Party</a><a href="#travel">Travel</a></div>
       <a class="nav-rsvp" href="#wedding-rsvp">RSVP</a>
     </nav>
-    <div class="hero-photo" role="img" aria-label="Wilda and Sean Walker dressed for an elegant evening"></div>
-    <div class="hero-shade"></div>
-    <div class="hero-content">
-      <p class="eyebrow">A night of love, music & forever</p>
-      <h1><span>Wilda</span><em>&</em><span>Sean</span></h1>
-      <div class="hero-rule"><span></span><i>✦</i><span></span></div>
-      <p class="date">Saturday, September 19, 2027 · South Florida</p>
-      <a class="primary-button" href="#details">Join us for the evening</a>
-    </div>
-    <a class="scroll-cue" href="#welcome" aria-label="Continue to welcome section">Scroll <span>↓</span></a>
+    <div class="hero-photo" role="img" aria-label="Wilda standing in front of Sean on the stairs in formal black attire"></div><div class="hero-shade"></div>
+    <div class="hero-content"><p class="eyebrow">A celebration of faith, love &amp; forever</p><img class="hero-monogram" src="assets/ws-monogram-sage-champagne-transparent-v2.png" alt="Wilda and Sean WS monogram"><h1>Wilda <em>&amp;</em> Sean</h1><div class="hero-rule"><span></span><i>✦</i><span></span></div><p class="hero-date">Sunday, March 21, 2027 <span>·</span> Homestead, Florida</p><a class="button" href="#story">Discover our story</a></div>
   </header>
-
   <main>
-    <section class="welcome" id="welcome">
-      <p class="section-kicker">The feature presentation</p>
-      <h2>Our greatest night<br>is better with you.</h2>
-      <p class="intro">The lights are low, the band is warm, and our favorite people are gathering. Join us for a wedding celebration inspired by jazz-club romance and the timeless glamour of opening night.</p>
-      <div class="mini-details" aria-label="Wedding overview">
-        <div><span>01</span><h3>The Date</h3><p>September 19, 2027</p></div>
-        <div><span>02</span><h3>The Place</h3><p>South Florida</p></div>
-        <div><span>03</span><h3>The Mood</h3><p>Black tie · Jazz night</p></div>
-      </div>
+    <section class="welcome"><p class="kicker">The feature presentation</p><h2>The Walkers’ Story</h2><p class="intro">The lights are low, the band is warm, and our favorite people are gathering. Join us for an elegant black-tie evening inspired by old Hollywood glamour and the soul of a jazz night.</p><div class="mini-details"><div><span>01</span><h3>The Date</h3><p>March 21, 2027</p></div><div><span>02</span><h3>The Place</h3><p>Homestead, Florida</p></div><div><span>03</span><h3>The Mood</h3><p>Black tie · Jazz night</p></div></div></section>
+
+    <section class="story split" id="story"><div class="framed-photo"><img src="assets/portrait-laughing.jpeg" alt="Wilda and Sean smiling together"></div><div><p class="kicker">Our story</p><h2>Once we started dating, we never stopped.</h2><div class="story-text"><p>We met through Facebook Dating in late March 2023. Wilda was a little hesitant at first—Sean initially received the Google number instead of the real one—but it didn’t take long for us to realize there was something special between us.</p><p>Our first date was April 6, 2023, on the Hollywood Boardwalk. It was simple: ice cream, a bunless burger, and hours of conversation. From the beginning, we felt comfortable being ourselves.</p><p>Sean was drawn to Wilda’s intelligence, humor, fearlessness, caring spirit, and love for life. Wilda saw Sean’s heart through his faith, his devotion to his children, and the way he prayed for her daughter and every one of her many siblings by name.</p><p>What makes our relationship special isn’t that we are perfect or always the same. It’s that we choose each other. We pray, laugh, support one another, and keep learning how to love each other through every season.</p><p>On September 20, 2025, during Wilda’s surprise 40th birthday celebration, Sean waited in the back of the venue on one knee and asked her to marry him. Through happy tears, she said yes.</p><p>Now we look forward to growing in faith, building our family, traveling, creating memories, and growing old together—as The Walkers.</p></div><div class="milestones"><div><span>April 6, 2023</span><strong>Our First Date</strong></div><div><span>May 9, 2023</span><strong>First “I Love You”</strong></div><div><span>September 20, 2025</span><strong>The Proposal</strong></div></div></div></section>
+
+    <section class="dark details" id="details"><p class="kicker">Tonight’s program</p><h2>The Wedding Details</h2><p class="section-note">The celebration will take place in Homestead, Florida. The exact venue and arrival instructions will be shared privately with invited guests closer to the wedding.</p><div class="detail-cards"><article><span>I</span><h3>Guest Arrival</h3><b>3:30 in the afternoon</b><p>Allow time to arrive, valet, and be seated.</p></article><article><span>II</span><h3>The Ceremony</h3><b>4:30 in the afternoon</b><p>Please be fully present for our unplugged ceremony.</p></article><article><span>III</span><h3>The Celebration</h3><b>Until 11:00 in the evening</b><p>Cocktails, live jazz, dinner, a DJ, and dancing.</p></article></div></section>
+    <section class="quote"><p>“Love always protects, always trusts, always hopes, always perseveres.”</p><span>1 Corinthians 13:7</span></section>
+
+    <section class="split attire" id="attire"><div><p class="kicker">Dress for opening night</p><h2>All-Black Black Tie</h2><p class="body-copy">This will be a formal, all-black celebration. Think timeless Oscar-night glamour: polished, elegant, and ready for an evening of jazz and dancing.</p><div class="callout"><strong>Please reserve for the wedding party</strong><span>White, sage green, champagne, and bridal colors</span></div></div><div class="attire-cards"><article><span>For Gentlemen</span><h3>Tuxedo Preferred</h3><p>A black tuxedo is preferred; a formal black suit is also welcome. Please, no sneakers.</p></article><article><span>For Ladies</span><h3>Long Black Gown</h3><p>Please wear a formal, floor-length black gown suited for an elegant evening celebration.</p></article></div></section>
+
+    <section class="gallery" id="gallery"><div class="section-heading"><div><p class="kicker">A few favorite frames</p><h2>In Pictures</h2></div><p>Love, laughter, and a little old-Hollywood magic.</p></div><div class="photo-grid"><figure class="photo-main"><img src="assets/portrait-stairs.jpeg" alt="Wilda and Sean posing on tiled stairs"><figcaption>Our leading roles</figcaption></figure><figure><img src="assets/portrait-arches.jpeg" alt="Wilda and Sean beneath elegant arches"><figcaption>Golden hour</figcaption></figure><div class="gallery-card"><img src="assets/ws-monogram-sage-champagne-transparent-v2.png" alt="WS monogram"><p>More memories coming soon</p></div></div><div class="hashtag"><span>Share the love</span><strong>#WalkerEverAfter</strong><p>Use our hashtag when sharing your favorite moments.</p></div></section>
+
+    <section class="party" id="party"><p class="kicker">By our side</p><h2>Wedding Party</h2><p class="section-note dark-note">Portraits are coming in our next update. For now, meet the family and friends standing beside us.</p>
+      <div class="party-group"><h3>Wilda’s Wedding Party</h3><div class="party-grid">
+        <article><div>AP</div><h4>Arnette Perteat-Jean</h4><p>Maid of Honor</p></article><article><div>SA</div><h4>Dr. Shola Ajabe</h4><p>Maid of Honor</p></article><article><div>SB</div><h4>Sasha Blanc</h4><p>Matron of Honor</p></article><article><div>CI</div><h4>Crystal Innocent</h4><p>Matron of Honor</p></article><article><div>SA</div><h4>Stephanie Anistor</h4><p>Bridesmaid</p></article><article><div>SA</div><h4>Stephanie Almanza</h4><p>Bridesmaid</p></article><article><div>CM</div><h4>Carolina Mena</h4><p>Bridesmaid</p></article><article><div>WT</div><h4>Wilson Thomas</h4><p>Bridesmaid</p></article><article><div>YG</div><h4>Yolanda Garcia</h4><p>Bridesmaid</p></article><article><div>KP</div><h4>Karen Pierre</h4><p>Bridesmaid</p></article>
+      </div></div>
+      <div class="party-group"><h3>Sean’s Wedding Party</h3><div class="party-grid">
+        <article><div>NW</div><h4>Nicholas Walker</h4><p>Best Man</p></article><article><div>SC</div><h4>Shareef Clayton</h4><p>Groomsman</p></article><article><div>RV</div><h4>Rolph Vassor</h4><p>Groomsman</p></article><article><div>AR</div><h4>Antwan Reid</h4><p>Groomsman</p></article><article><div>TB</div><h4>Theron Brown</h4><p>Groomsman</p></article><article><div>VI</div><h4>Vlad Innocent</h4><p>Groomsman</p></article><article><div>AP</div><h4>Alan Pierre</h4><p>Groomsman</p></article><article><div>RJ</div><h4>Rebel Jean</h4><p>Groomsman</p></article><article><div>TT</div><h4>Travis Thomas</h4><p>Groomsman</p></article><article><div>EE</div><h4>Eric Escarment</h4><p>Groomsman</p></article>
+      </div></div>
+      <div class="juniors"><p class="kicker">Our junior attendants</p><div><span>Eleanor Walker</span><span>Elisha Walker</span><span>Samaya LaPommeray</span><span>Julius LaPommeray</span></div></div>
     </section>
 
-    <section class="story" id="story">
-      <div class="story-image frame"><img src="assets/portrait-laughing.jpeg" alt="Wilda and Sean Walker smiling together"></div>
-      <div class="story-copy">
-        <p class="section-kicker">Long story short</p>
-        <h2>One beautiful story,<br>still being written.</h2>
-        <p>Every great love has a first scene, a favorite chapter, and a moment when everything changes. Ours led us here—to a room filled with music, laughter, and all of you.</p>
-        <div class="timeline">
-          <div><span>Act I</span><h3>First Met</h3><p>Where the story began</p></div>
-          <div><span>Act II</span><h3>First “I Love You”</h3><p>The unforgettable line</p></div>
-          <div><span>Act III</span><h3>The Proposal</h3><p>Our favorite yes</p></div>
-        </div>
-        <p class="edit-note">Dates and story details can be added here.</p>
-      </div>
-    </section>
+    <section class="dark memory"><p class="kicker">Forever in our hearts</p><h2>In Loving Memory</h2><p class="section-note">As we celebrate this joyful day, we lovingly remember those who helped shape our lives and whose love remains with us. Though they cannot be with us in person, their presence will be felt in every prayer, every smile, and every moment we share.</p><div class="memory-names"><span>Larry Walker</span><span>Alphonse Pierre</span><span>Ingrid Telisme</span><span>Joel Pierre</span></div></section>
 
-    <section class="details" id="details">
-      <p class="section-kicker">Tonight’s program</p>
-      <h2>The Wedding Details</h2>
-      <div class="detail-cards">
-        <article><span class="card-number">I</span><h3>The Ceremony</h3><p class="card-time">5:30 in the evening</p><p>Venue name and address<br>South Florida</p><small>Doors open at 5:00</small></article>
-        <article><span class="card-number">II</span><h3>Cocktails & Jazz</h3><p class="card-time">6:00 in the evening</p><p>Champagne, conversation<br>& a live quartet</p><small>Black-tie attire</small></article>
-        <article><span class="card-number">III</span><h3>The Reception</h3><p class="card-time">7:00 until late</p><p>Dinner, dancing<br>& an encore or two</p><small>Adults-only celebration</small></article>
-      </div>
-    </section>
+    <section class="split travel" id="travel"><div><p class="kicker">Planning your visit</p><h2>Travel &amp; Stay</h2><p class="body-copy">Our wedding will take place in Homestead, Florida. Miami International Airport is the closest major airport. Guests will be responsible for their transportation, and valet parking will be available.</p><p class="privacy">The exact venue address, recommended hotels, and final arrival instructions will be shared with invited guests closer to the wedding.</p></div><div class="travel-list"><div><span>01</span><h3>Airport</h3><p>Miami International Airport</p></div><div><span>02</span><h3>Transportation</h3><p>Guests will arrange their own transportation</p></div><div><span>03</span><h3>Parking</h3><p>Valet parking will be available</p></div><div><span>04</span><h3>Hotels</h3><p>Recommendations coming soon</p></div></div></section>
 
-    <section class="quote-band"><p>“Life is a lot like jazz… it’s best when you improvise.”</p><span>— George Gershwin</span></section>
+    <section class="gifts"><div><p class="kicker">With gratitude</p><h2>Honeymoon Fund</h2><p>Your presence at our wedding is the greatest gift. If you would like to contribute, your gift will help us create unforgettable memories on our honeymoon in Jamaica as we begin our lives together as The Walkers.</p><a class="button inverse" href="https://www.honeyfund.com/site/thewalkersstory2027" target="_blank" rel="noopener noreferrer">Visit our Honeyfund ↗</a></div></section>
 
-    <section class="gallery" id="gallery">
-      <div class="gallery-heading"><div><p class="section-kicker">A few favorite frames</p><h2>In Pictures</h2></div><p>Love, laughter, and a little old-Hollywood magic.</p></div>
-      <div class="photo-grid">
-        <figure class="photo-main"><img src="assets/portrait-stairs.jpeg" alt="Wilda and Sean Walker posing on tiled stairs"><figcaption>Our leading roles</figcaption></figure>
-        <figure><img src="assets/portrait-arches.jpeg" alt="Wilda and Sean Walker beneath elegant arches"><figcaption>Golden hour</figcaption></figure>
-        <div class="gallery-card"><span>W & S</span><p>More photographs<br>can be added here.</p></div>
-      </div>
-    </section>
-
-    <section class="travel" id="travel">
-      <div class="travel-copy"><p class="section-kicker">Make a weekend of it</p><h2>Travel & Stay</h2><p>We can’t wait to welcome you. This section can include the hotel block, airport suggestions, transportation notes, and a few favorite places to eat, sip, and explore.</p><a href="#" class="text-link" onclick="return false">Travel guide coming soon <span>→</span></a></div>
-      <div class="travel-list">
-        <div><span>01</span><h3>Hotel</h3><p>Room block details go here</p></div>
-        <div><span>02</span><h3>Getting Here</h3><p>Airport and shuttle notes</p></div>
-        <div><span>03</span><h3>Things To Do</h3><p>Our favorite local spots</p></div>
-      </div>
-    </section>
-
-    <section class="faq">
-      <p class="section-kicker">The fine print</p><h2>Questions & Answers</h2>
-      <div class="faq-grid"><div><h3>What should I wear?</h3><p>Black-tie attire. Think timeless evening glamour, polished silhouettes, and dancing shoes.</p></div><div><h3>May I bring a guest?</h3><p>Your invitation will note the guests included in your party.</p></div><div><h3>Are children invited?</h3><p>We’re planning an adults-only evening so everyone can enjoy the late-night celebration.</p></div><div><h3>Where are you registered?</h3><p>A registry link and short note can be placed here once ready.</p></div></div>
-    </section>
-
-    <section class="rsvp" id="wedding-rsvp">
-      <div class="rsvp-layout">
-        <div class="rsvp-details">
-          <p class="section-kicker">Kindly respond</p>
-          <h2>Will you join us?</h2>
-          <p class="rsvp-date">Wilda &amp; Sean Walker <span aria-hidden="true">·</span> Sunday, March 21, 2027</p>
-          <p class="rsvp-intro">We hope you’ll be there for the first note, the last dance, and every beautiful moment in between.</p>
-          <div class="rsvp-deadline">
-            <strong>RSVP by January 21, 2027</strong>
-            <span>Please let us know your attendance and meal preference so we can finalize catering and seating.</span>
-          </div>
-          <div class="rsvp-notes" aria-label="Important RSVP information">
-            <div><span class="rsvp-note-mark" aria-hidden="true">I</span><p><strong>Adults-only celebration</strong>We kindly request no children at the ceremony or reception.</p></div>
-            <div><span class="rsvp-note-mark" aria-hidden="true">II</span><p><strong>One RSVP per guest</strong>Please respond individually. Due to venue limits, additional guests and plus-ones cannot be added.</p></div>
-            <div><span class="rsvp-note-mark" aria-hidden="true">III</span><p><strong>Meal selection</strong>Please choose your meal preference in question five of the form.</p></div>
-          </div>
-          <div class="rsvp-actions">
-            <a class="calendar-button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wilda+%26+Sean+Walker%27s+Wedding&amp;dates=20270321T160000/20270321T230000&amp;details=Wedding+of+Wilda+and+Sean+Walker.+RSVP+completed.&amp;location=Wedding+Venue" target="_blank" rel="noopener noreferrer">Add to Google Calendar <span aria-hidden="true">↗</span></a>
-            <p>Questions? Email <a href="mailto:thewalkersstory2027@gmail.com">thewalkersstory2027@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="rsvp-form-wrap">
-          <iframe
-            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
-            width="100%"
-            height="880"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Wilda and Sean Walker wedding RSVP form"
-          >Loading RSVP form…</iframe>
-        </div>
-      </div>
-    </section>
+    <section class="dark rsvp" id="wedding-rsvp"><div class="rsvp-layout"><div class="rsvp-details"><p class="kicker">Kindly respond</p><h2>Will you join us?</h2><p class="rsvp-date">Wilda &amp; Sean Walker · Sunday, March 21, 2027</p><p class="rsvp-intro">We hope you’ll be there for the first note, the last dance, and every beautiful moment in between.</p><div class="rsvp-deadline"><strong>RSVP by January 21, 2027</strong><span>Please respond individually so we can finalize seating and our guest count.</span></div><div class="rsvp-notes"><div><span>I</span><p><strong>Adults-only celebration</strong>We kindly request no children at the ceremony or reception.</p></div><div><span>II</span><p><strong>One RSVP per invited guest</strong>Additional guests and plus-ones cannot be added.</p></div><div><span>III</span><p><strong>Buffet-style dinner</strong>No advance meal selection is required.</p></div></div><a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wilda+%26+Sean+Walker%27s+Wedding&amp;dates=20270321T153000/20270321T230000&amp;ctz=America%2FNew_York&amp;details=Wedding+of+Wilda+and+Sean+Walker.+Additional+details+will+be+shared+with+invited+guests.&amp;location=Homestead%2C+Florida" target="_blank" rel="noopener noreferrer">Add to Google Calendar ↗</a></div><div class="rsvp-system"><p class="kicker">RSVP System</p><img src="assets/ws-monogram-sage-champagne-transparent-v2.png" alt="WS monogram"><h3>Online responses will open here.</h3><p>Our private RSVP system will be connected in this space before invitations are sent.</p><div class="system-preview"><span>Full name</span><span>Email address</span><span>Will you attend?</span><button type="button" disabled>Submit RSVP</button></div><p class="contact"><strong>RSVP assistance</strong>Crystal Innocent<br><em>Contact email and phone number to be added.</em></p></div></div></section>
   </main>
-
-  <footer><a class="monogram" href="#home">W <b>&</b> S</a><p>Wilda & Sean Walker · September 19, 2027</p><p class="footer-note">The Walkers · Made with love, rhythm & a little champagne.</p></footer>
+  <footer><img src="assets/ws-monogram-sage-champagne-transparent-v2.png" alt="Wilda and Sean WS monogram"><p>Wilda &amp; Sean Walker · March 21, 2027</p><p>The Walkers’ Story · Faith, love &amp; a little jazz.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -5,9 +5,10 @@ let html = await readFile(new URL('index.html', root), 'utf8');
 const css = await readFile(new URL('styles.css', root), 'utf8');
 const script = await readFile(new URL('script.js', root), 'utf8');
 
-for (const name of ['portrait-stairs.jpeg', 'portrait-laughing.jpeg', 'portrait-arches.jpeg']) {
+for (const name of ['portrait-stairs.jpeg', 'portrait-laughing.jpeg', 'portrait-arches.jpeg', 'ws-monogram-sage-champagne-transparent-v2.png']) {
   const bytes = await readFile(new URL(`assets/${name}`, root));
-  const dataUrl = `data:image/jpeg;base64,${bytes.toString('base64')}`;
+  const mime = name.endsWith('.png') ? 'image/png' : 'image/jpeg';
+  const dataUrl = `data:${mime};base64,${bytes.toString('base64')}`;
   html = html.replaceAll(`assets/${name}`, dataUrl);
 }
 

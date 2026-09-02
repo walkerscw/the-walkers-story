@@ -1,11 +1,14 @@
-const buttons = document.querySelectorAll('[data-set-theme]');
-const themeNames = { noir: 'Traditional black and white', emerald: 'Gold and green', sage: 'Sage, champagne and white' };
+const menuButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const theme = button.dataset.setTheme;
-    document.body.dataset.theme = theme;
-    buttons.forEach((item) => item.classList.toggle('active', item === button));
-    document.title = `${themeNames[theme]} — Wilda & Sean Walker`;
+menuButton?.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+});
+
+navLinks?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
